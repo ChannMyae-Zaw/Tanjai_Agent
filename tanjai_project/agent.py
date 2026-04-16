@@ -7,7 +7,7 @@ from google.adk.tools import google_search, agent_tool, VertexAiSearchTool
 load_dotenv()
 
 _dir = os.path.dirname(os.path.abspath(__file__))
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.path.join(_dir, "credentials.json")
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.path.join(_dir, "credentials.json") if os.path.exists(os.path.join(_dir, "credentials.json")) else "/etc/secrets/credentials.json"
 
 # ─────────────────────────────────────────────
 # CONFIG
