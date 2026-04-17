@@ -25,7 +25,7 @@ DATASTORE_PATH = (
 # ─────────────────────────────────────────────
 search_specialist = LlmAgent(
     name="SearchAgent",
-    model="gemini-3-flash-preview",
+    model="gemini-3.1-flash-lite-preview",
     description="ค้นหาข้อมูลทันสมัยจากอินเทอร์เน็ต เช่น ข่าวสาร ราคา หรือข้อมูลทั่วไปที่อัปเดต",
     instruction="""
     You are an internet research specialist. 
@@ -42,7 +42,7 @@ search_specialist = LlmAgent(
 # ─────────────────────────────────────────────
 org_knowledge_specialist = LlmAgent(
     name="OrgKnowledgeAgent",
-    model="gemini-3-flash-preview",
+    model="gemini-3.1-flash-lite-preview",
     description="ค้นหาข้อมูลภายในองค์กร เช่น นโยบาย กระบวนการ คู่มือ หรือเอกสารภายใน",
     instruction="""
     You are an internal knowledge specialist for the organization.
@@ -59,7 +59,7 @@ org_knowledge_specialist = LlmAgent(
 # ─────────────────────────────────────────────
 image_specialist = LlmAgent(
     name="ImageGenAgent",
-    model="gemini-3-flash-preview",
+    model="gemini-3.1-flash-lite-preview",
     description="สร้างภาพจาก prompt ที่ผู้ใช้ระบุ",
     instruction="""
     Generate the requested image based on the user's description.
@@ -73,7 +73,7 @@ image_specialist = LlmAgent(
 # ─────────────────────────────────────────────
 root_agent = LlmAgent(
     name="TanjAI",
-    model="gemini-3-flash-preview",
+    model="gemini-3.1-flash-lite-preview",
     description="TanjAI ผู้ช่วยในที่ทำงานที่ฉลาดและรอบรู้",
     instruction="""
     คุณคือ TanjAI (แทนใจ) ผู้ช่วย AI สำหรับองค์กร ที่มีความสามารถดังนี้:
