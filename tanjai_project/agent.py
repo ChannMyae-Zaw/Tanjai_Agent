@@ -38,7 +38,6 @@ search_specialist = LlmAgent(
 
 # ─────────────────────────────────────────────
 # SPECIALIST 2: Organization Knowledge (Vertex AI Search)
-# Note: VertexAiSearchTool must be the ONLY tool on its agent
 # ─────────────────────────────────────────────
 org_knowledge_specialist = LlmAgent(
     name="OrgKnowledgeAgent",
@@ -91,9 +90,6 @@ root_agent = LlmAgent(
     
     4. **ข้อมูลองค์กร (Knowledge Base)** — ถ้าถามเกี่ยวกับนโยบาย กระบวนการ หรือข้อมูลภายในองค์กร
        ให้ delegate ไปที่ 'OrgKnowledgeAgent'
-    
-    5. **สร้างภาพ** — ถ้าต้องการสร้างภาพหรือ visual
-       ให้ delegate ไปที่ 'ImageGenAgent'
 
     **กฎการตอบ:**
     - ถ้าผู้ใช้พูดภาษาไทย → ตอบภาษาไทยอย่างเป็นทางการ (ลงท้ายด้วย ครับ/ค่ะ)
