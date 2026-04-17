@@ -1,1 +1,1 @@
-web: python -m uvicorn google.adk.cli.fast_api:app --host 0.0.0.0 --port $PORT --app-dir tanjai_project
+web: adk web --port $PORT --host 0.0.0.0
